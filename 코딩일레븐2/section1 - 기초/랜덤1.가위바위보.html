@@ -22,15 +22,16 @@
       window.onload = function(){
         
         var button = document.querySelector(".startBtn");
-        var h1 = document.getElementsByTagName("h1")[0];
+        var one = document.getElementsByTagName("h1")[0];
+        var two = document.getElementsByTagName("h1")[1];
 
         var handArr = ["가위", "바위", "보"];
         
         button.addEventListener("click", function(){
-          var num = Math.round(Math.random() * (handArr.length-1)); 
-          // var num = Math.round( Math.random() * 2);
-          h1.innerHTML = handArr[num];
-          // alert(handArr[num])
+          var num1 = Math.round(Math.random() * (handArr.length-1));  // 난수 발생 해서 길이만큼 곱한 뒤 반올림해줌
+          var num2 = Math.round(Math.random() * (handArr.length-1)); 
+          one.innerHTML = handArr[num1];
+          two.innerHTML = handArr[num2];
         })
       }
       
@@ -38,6 +39,8 @@
     </head>
     <body>
       <button type="button" class="startBtn">리셋</button>
-      <h1>가위</h1>
+      <h1 id="one">가위</h1>
+      <h2>vs</h2>
+      <h1 id="two">가위</h1>
     </body>
 </html>

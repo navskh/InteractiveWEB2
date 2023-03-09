@@ -45,13 +45,18 @@
         })
 
         startBtn.addEventListener("click", function(){
-          rotateNum = Math.round(Math.random()*720);
+          // rotateNum = Math.round(Math.random()*720);
+          rotateNum = Math.round(Math.random()*7200);
           // alert(rotateNum)
           h1.innerHTML = rotateNum + "deg";
 
           arrow.style.transform = "rotate("+ rotateNum +"deg)";
 
+          setTimeout(() => {
+            alert('히잉');
+          }, 2050);
         })
+
       }
       
     </script>
