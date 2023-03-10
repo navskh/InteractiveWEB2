@@ -40,6 +40,7 @@ window.onload = function(){
         pageChangeFunc();
     })
 
+    // navigation 구현 
     for( var i = 0; i < pointBtnAll.length; i++ ){
         (function(idx) {
             pointBtnAll[idx].onclick = function() {

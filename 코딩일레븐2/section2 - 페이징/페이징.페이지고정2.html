@@ -96,8 +96,9 @@
               pointBtn[idx].onclick = function() {
                   //alert(idx);
                   pageNum = idx;
-                  pageChangeFunc();
+                  pageChangeFunc(); // 그림이 바뀌는 부분
 
+                  // scroll 움직이는 부분
                   window.scrollTo({
                     top: section[pageNum].offsetTop,
                     behavior: 'smooth',

@@ -46,7 +46,7 @@
         transition : all 1s ease-in-out;
         visibility: hidden;
         opacity: 0;
-        transform : translate(-100px, -150px) rotate(-10deg);
+        transform : translate(-100px, -150px) rotate(-10deg); /* 어디서 들어올건지를 설정함 돌면서 들어올 수 있음 */
       }
 
       /* 오른쪽 신발 */
@@ -121,7 +121,8 @@
           var scroll = this.scrollY;
 
           for(var i=0; i<totalNum; i++){
-            if(scroll > section[i].offsetTop - window.outerHeight/1.5  && scroll < section[i].offsetTop - window.outerHeight/1.5 + section[i].offsetHeight){
+            if(scroll > section[i].offsetTop - window.outerHeight/1.5  && 
+            scroll < section[i].offsetTop - window.outerHeight/1.5 + section[i].offsetHeight){
               pageNum = i;
               break;
             }

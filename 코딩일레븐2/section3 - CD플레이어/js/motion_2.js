@@ -7,8 +7,11 @@ var totalNum = 0;
 var album;
 var pointBtnAll;
 var bgArray = new Array();
-bgArray[0] = ["#0272a4","#f6a564"];
+
+// 배경 배열에 넣어줌.
+bgArray[0] = ["#0272a4","#f6a564"]; 
 bgArray[1] = ["#b6bfc8","#36595b"];
+// bgArray[1] = ["green","black"];
 bgArray[2] = ["#e58e82","#6f569f"];
 
 window.onload = function(){
@@ -48,6 +51,8 @@ window.onload = function(){
 function pageChangeFunc(){
 
     // console.log(bgArray[pageNum][1])
+  
+    // background color는 앨범의 왼쪽 상단 , 우측 하단의 색상을 가져와서 gradient로 줬다. 120도의 방향으로 gradient를 입혀준다.
     contentWrap.style.background = "linear-gradient(120deg,"+ bgArray[pageNum][0] +", "+ bgArray[pageNum][1] + ")";
 
     for(var i=0; i<totalNum; i++){

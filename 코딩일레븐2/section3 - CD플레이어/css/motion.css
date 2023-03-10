@@ -8,6 +8,7 @@ body {
   transition: background 1s ease-out;
   width: 100vw;
   height: 100vh;
+  /* touch action 에 아무 일도 안일어나게끔 */
   touch-action: none;
 }
 
