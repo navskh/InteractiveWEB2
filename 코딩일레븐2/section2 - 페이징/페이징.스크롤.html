@@ -7,6 +7,7 @@
     <style>
       body {
         transition : all 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        /* 스크롤을 막아주었음. */
         overflow: hidden;
       }
       .navi {
@@ -40,7 +41,7 @@
         var h1 = document.getElementsByTagName("h1")[0];
         var bgColorArr = ["#85FFBD", "#FFFB7D", "#E0C3FC", "#00DBDE"];
         var section = document.getElementsByTagName("section");
-        // alert(section.length)
+        // alert(section.length) 
 
         var pageNum = 0;
         var totalNum = section.length;
@@ -67,6 +68,7 @@
             top: section[pageNum].offsetTop,
             behavior: 'smooth',
           })
+          // behavior 라는 걸로 스크롤 애니메이션이 등장함.
           
         }
 

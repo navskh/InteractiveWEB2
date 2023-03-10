@@ -69,7 +69,8 @@
           var scroll = this.scrollY;
 
           for(var i=0; i<totalNum; i++){
-            if(scroll > section[i].offsetTop - window.outerHeight/1.5  && scroll < section[i].offsetTop - window.outerHeight/1.5 + section[i].offsetHeight){
+            if(scroll > section[i].offsetTop - window.outerHeight/1.5  && 
+              scroll < section[i].offsetTop - window.outerHeight/1.5 + section[i].offsetHeight){
               pageNum = i;
               break;
             }
