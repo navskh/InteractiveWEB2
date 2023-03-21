@@ -14,6 +14,7 @@ section {
   width: 100vw;
 }
 
+/* 화면 사이즈를 조금더 잡았다. */
 section.top {
   min-height: 300vh;
 }
@@ -62,6 +63,7 @@ section.bottom .contWrap ul li p {
   border-bottom: 2px dashed #fff;
 }
 
+/* 카드 네개 색 입히기 */
 section.bottom .contWrap ul li:nth-child(1) {
   background: linear-gradient(45deg, #f7b733, #fc4a1a);
 }

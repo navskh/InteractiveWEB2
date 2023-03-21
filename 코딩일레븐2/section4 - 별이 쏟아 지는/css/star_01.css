@@ -1,10 +1,22 @@
+/*  google font 썼음 
+  https://fonts.google.com/
+  여기가서 찾는다.
+  font를 다운 받을 수도 있으나 옆에 selected style 
+  link로 해서 가져올 수도 이쏙
+  css import 할 수도 있다. 
+  아래의 경우 import 한 것임.
+*/
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+/* 이거는 뒤에 나오는 밤 사진  */
 body {
   overflow-x: hidden;
   background: url(../image/bg.jpg);
+  /* 여기다가 font 이름 넣어주면 됨, 만약에 로드가 안될 때를 대비해서 기본 폰트도 넣어주는 것이 좋다. */
   font-family: 'Do Hyeon', sans-serif;
 }
 
+/* 이거는 별 사진  */
 .starBg {
   background: url(../image/star.png);
 }
@@ -14,8 +26,9 @@ section {
   width: 100vw;
 }
 
+/* 아래 화면 위 화면 사이의 간격이 조금 있어야 느낌이 살기 때문에 */
 section.top {
-  min-height: 160vh;
+  min-height: 160vh; 
 }
 
 section.top h1.title {

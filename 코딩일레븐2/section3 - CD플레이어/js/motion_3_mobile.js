@@ -60,9 +60,9 @@ window.onload = function () {
 	var end_X = 0;
 
 	function touchFunc(evt) {
-		// console.log(evt.type)
+		console.log(evt.type)
 		// return false;
-		// evt.preventDefault();
+		evt.preventDefault();
 
 		var type = null;
 		var touch = null;
@@ -75,22 +75,13 @@ window.onload = function () {
 				//console.log("start_X : " + start_X);
 				end_X = 0;
 				break;
-			// case "touchmove":
-			//     type = "mousemove";
-			//     touch = evt.changedTouches[0];
-			//     console.log(touch)
-			// break;
 			case 'touchend':
 				type = 'mouseup';
 				touch = evt.changedTouches[0];
 				end_X = touch.clientX;
 
-				//console.log("end_X : "+ end_X);
-
 				var chkNum = start_X - end_X;
 				var chkNumAbs = Math.abs(chkNum);
-
-        console.log(chkNum, chkNumAbs);
 
 				if (chkNumAbs > 100) {
 					// //터치를 많이 했으면 실행
