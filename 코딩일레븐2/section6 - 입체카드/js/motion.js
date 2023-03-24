@@ -17,14 +17,14 @@ window.onload = function () {
 		button.classList.add('dimd');
 		wrap.classList.add('active');
 
-		if (isMobile) {
+    if (isMobile) {
 			//모바일이면 실행
 			if (isIos) {
 				//ios일때만 실행 
         // DeviceOrientationEevnt 기기방향을 가져와서 이벤트 발생
 				DeviceOrientationEvent.requestPermission() 
 					.then(function () {
-						// console.log('DeviceOrientationEvent, DeviceMotionEvent enabled');
+						console.log('DeviceOrientationEvent, DeviceMotionEvent enabled');
 						mobileOrientationChk();
 					})
 					.catch(console.error);
